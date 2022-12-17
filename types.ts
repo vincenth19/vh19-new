@@ -1,8 +1,8 @@
-export type TURL = {
+export interface IURL {
   label: string;
   url: string;
-};
+}
 
-export type TProfileLinks = TURL & {
+export interface TProfileLinks extends IURL {
   icon: string;
-};
+}
